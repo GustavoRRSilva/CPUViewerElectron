@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "src/electron/main",
+  "main": "dist-electron/main",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "electron:dev": "electron . "
+    "electron:dev": "electron . ",
+    "electron:transpile": "tsc --project src/electron/tsconfig.json"
   },
   "dependencies": {
     "react": "^18.3.1",
